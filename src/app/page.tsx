@@ -139,7 +139,7 @@ export default function HomePage() {
         <div className="approach-points">
           <article><span>01 / CLARITY</span><h3>Understand before building.</h3><p>We start with the problem, the people experiencing it, and what a genuinely useful solution looks like.</p></article>
           <article><span>02 / SIMPLICITY</span><h3>Make the complex feel natural.</h3><p>Every screen, feature, and interaction should earn its place. No complexity for decoration.</p></article>
-          <article><span>03 / CRAFT</span><h3>Build for the real world.</h3><p>Thoughtful design, dependable engineering, and experiences that respect people's time and devices.</p></article>
+          <article><span>03 / CRAFT</span><h3>Build for the real world.</h3><p>Thoughtful design, dependable engineering, and experiences that respect people&apos;s time and devices.</p></article>
         </div>
       </section>
 
@@ -147,8 +147,8 @@ export default function HomePage() {
         <div className="section-wrap contact-grid">
           <div className="contact-copy">
             <span className="eyebrow">HAVE A PROJECT IN MIND?</span>
-            <h2>Let's make<br /><span>it real.</span></h2>
-            <p>Tell us what you're trying to create or improve. You don't need a perfect brief. A clear starting point is enough.</p>
+            <h2>Let&apos;s make<br /><span>it real.</span></h2>
+            <p>Tell us what you&apos;re trying to create or improve. You don&apos;t need a perfect brief. A clear starting point is enough.</p>
             <div className="contact-note"><span className="status-dot" /> PROJECT APPLICATIONS ARE OPEN</div>
           </div>
           <ApplicationForm />
