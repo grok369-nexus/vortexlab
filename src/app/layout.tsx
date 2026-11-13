@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vortexlabs.dev"),
   title: {
     default: "Vortex Labs | Extraordinary technology. Effortless experiences.",
     template: "%s | Vortex Labs",
