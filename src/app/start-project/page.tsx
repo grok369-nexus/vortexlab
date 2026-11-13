@@ -29,7 +29,8 @@ export default function StartProjectPage() {
     event.preventDefault();
     setStatus("sending");
     setError("");
-    const form = new FormData(event.currentTarget);
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
     const payload = Object.fromEntries(form.entries());
 
     try {
@@ -41,7 +42,7 @@ export default function StartProjectPage() {
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || "We couldn't submit your application. Please try again.");
       setStatus("success");
-      event.currentTarget.reset();
+      formElement.reset();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
       setStatus("error");
