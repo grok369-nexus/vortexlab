@@ -21,7 +21,7 @@ export function SiteFooter() {
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Vortex Labs</span>
           <span>Extraordinary technology. Effortless experiences.</span>
-          <Link href="/services">Services</Link>
+          <Link href="/privacy">Privacy</Link>
         </div>
       </div>
     </footer>
