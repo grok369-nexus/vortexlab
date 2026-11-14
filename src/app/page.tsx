@@ -80,27 +80,15 @@ export default function HomePage() {
       </header>
 
       <div id="main-content">
-        <section className="hero section-wrap" id="top">
-          <div className="hero-copy">
-            <div className="eyebrow"><span className="status-dot" /> INDEPENDENT DIGITAL PRODUCT STUDIO</div>
-            <h1>Good ideas deserve <span>better technology.</span></h1>
-            <p className="hero-lede">
-              We design and build websites, web applications, and digital products that make complicated things feel simple.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-primary" href="#start">Build something with us <ArrowUpRight /></a>
-              <a className="text-link" href="#work">Explore our work <span>↓</span></a>
-            </div>
-            <div className="hero-footnote"><span className="line" /> BUILT WITH INTENTION. MADE TO BE USEFUL.</div>
-          </div>
-          <div className="hero-art">
+        <section className="hero cinematic-hero" id="top">
+          <div className="hero-art" aria-hidden="true">
             <Image
               className="hero-art-image"
               src="https://echodesono.com/images/4f2c02ad842b7eae18c14e6c313852a1.png"
-              alt="A luminous, flowing glass installation suspended inside a dark architectural space"
-              width={1400}
+              alt=""
+              width={1800}
               height={1400}
-              sizes="(max-width: 640px) 100vw, 48vw"
+              sizes="100vw"
               priority
               unoptimized
             />
@@ -113,12 +101,49 @@ export default function HomePage() {
             </div>
             <a className="hero-art-credit" href="https://echodesono.com/" target="_blank" rel="noreferrer">Visual reference · Echo de Sono</a>
           </div>
+          <div className="hero-copy section-wrap">
+            <div className="eyebrow"><span className="status-dot" /> INDEPENDENT DIGITAL PRODUCT STUDIO</div>
+            <h1>Make room for <span>what&apos;s possible.</span></h1>
+            <p className="hero-lede">
+              We turn thoughtful ideas into useful technology. Digital products, platforms, and experiences designed to make life work better.
+            </p>
+            <div className="hero-actions">
+              <a className="button button-primary" href="#start">Start a conversation <ArrowUpRight /></a>
+              <a className="text-link" href="#work">Discover what we make <span>↓</span></a>
+            </div>
+            <div className="hero-footnote"><span className="line" /> EXTRAORDINARY TECHNOLOGY. EFFORTLESS EXPERIENCES.</div>
+          </div>
+          <a className="hero-scroll-cue" href="#belief">SCROLL TO EXPLORE <span>↓</span></a>
         </section>
 
         <section className="principle-band">
           <div className="section-wrap principle-inner">
             <span className="eyebrow">OUR BELIEF</span>
             <p>Extraordinary technology. <span>Effortless experiences.</span> Meaningful lives.</p>
+          </div>
+        </section>
+
+        <section className="impact-section" id="belief">
+          <div className="section-wrap impact-grid">
+            <div className="impact-copy">
+              <span className="eyebrow">IDEAS WITH INTENTION</span>
+              <h2>Technology should make <span>more possible.</span></h2>
+              <p>We believe the best technology doesn&apos;t demand attention. It quietly removes friction, unlocks opportunity, and gives people more room to do meaningful things.</p>
+              <a className="impact-link" href="#approach">What guides us <ArrowUpRight /></a>
+            </div>
+            <div className="impact-visual">
+              <Image
+                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1600&q=85"
+                alt="Sculptural contemporary architecture with clean lines and a dramatic open sky"
+                width={1600}
+                height={1100}
+                sizes="(max-width: 640px) 100vw, 55vw"
+                unoptimized
+              />
+              <div className="impact-visual-shade" />
+              <span className="impact-visual-v" aria-hidden="true">V</span>
+              <span className="impact-visual-label">DESIGNED FOR POSSIBILITY · BUILT FOR PEOPLE</span>
+            </div>
           </div>
         </section>
 
