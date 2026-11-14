@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ApplicationForm } from "@/components/application-form";
 
 const services = [
@@ -27,7 +28,10 @@ const projects = [
     type: "PROPERTY TECHNOLOGY",
     description: "A property marketplace concept designed to make finding a place more straightforward.",
     status: "Product in development",
-    mark: "H",
+    image: "https://a0.muscache.com/im/pictures/hosting/Hosting-661987804942093972/original/36a4632e-a208-400f-a0aa-90e47ed19c7a.jpeg",
+    imageAlt: "Modern Kampala apartment interior with large windows and natural light",
+    imageCredit: "Airbnb",
+    imageSource: "https://www.airbnb.com/rooms/661987804942093972",
     tone: "homza",
   },
   {
@@ -35,7 +39,10 @@ const projects = [
     type: "LOCATION DISCOVERY",
     description: "An exploration of simpler ways to discover useful places around you.",
     status: "Product in development",
-    mark: "D",
+    image: "https://newvision-media.s3.amazonaws.com/cms/46d1f93e-62aa-4c31-9394-5a8ebf6dc15e.jpg",
+    imageAlt: "Kampala city street at sunset",
+    imageCredit: "New Vision",
+    imageSource: "https://www.newvision.co.ug/category/news/in-pictures-sunset-in-kampala-NV_111204",
     tone: "dwell",
   },
   {
@@ -43,7 +50,10 @@ const projects = [
     type: "EDUCATION TECHNOLOGY",
     description: "A practical virtual laboratory and revision experience for science learners.",
     status: "Early-stage project",
-    mark: "V",
+    image: "https://scienceid.net/upload/product/81/31076/8817dedf_31076.jpg",
+    imageAlt: "Virtual physics laboratory showing an Atwood machine experiment",
+    imageCredit: "ScienceID",
+    imageSource: "https://lab.scienceid.net/catalog/9935/31076/",
     tone: "lab",
   },
 ];
@@ -128,7 +138,20 @@ export default function HomePage() {
             <div className="project-grid">
               {projects.map((project) => (
                 <article className={`project-card ${project.tone}`} key={project.name}>
-                  <div className="project-visual"><div className="project-symbol">{project.mark}</div><span className="project-index">{project.type}</span><span className="project-orbit" /></div>
+                  <div className="project-visual">
+                    <Image
+                      src={project.image}
+                      alt={project.imageAlt}
+                      width={1200}
+                      height={750}
+                      sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw"
+                      unoptimized
+                    />
+                    <span className="project-index">{project.type}</span>
+                    <a className="project-image-note" href={project.imageSource} target="_blank" rel="noreferrer">
+                      Illustrative image · {project.imageCredit}
+                    </a>
+                  </div>
                   <div className="project-info"><div><h3>{project.name}</h3><p>{project.description}</p></div><span className="project-status">{project.status}</span></div>
                 </article>
               ))}
