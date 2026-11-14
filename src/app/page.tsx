@@ -147,6 +147,54 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="expertise-section">
+          <div className="section-wrap expertise-wrap">
+            <div className="section-heading expertise-heading">
+              <div><span className="eyebrow">WHERE IDEAS MEET REAL NEEDS</span><h2>Technology for<br /><span>everyday progress.</span></h2></div>
+              <p>We look for meaningful problems in the world around us, then shape technology around the people who experience them.</p>
+            </div>
+            <div className="industry-grid">
+              <article className="industry-card industry-property">
+                <span className="industry-number">01 / PROPERTY</span>
+                <div className="industry-symbol" aria-hidden="true">⌂</div>
+                <h3>Make finding a place simpler.</h3>
+                <p>Clearer ways to discover homes, connect with property providers, and move with confidence.</p>
+                <span className="industry-project">EXPLORING THROUGH HOMZA</span>
+              </article>
+              <article className="industry-card industry-discovery">
+                <span className="industry-number">02 / DISCOVERY</span>
+                <div className="industry-symbol" aria-hidden="true">◎</div>
+                <h3>Bring useful places closer.</h3>
+                <p>Location-aware experiences that help people find what matters around them without unnecessary friction.</p>
+                <span className="industry-project">EXPLORING THROUGH DWELLSPOT</span>
+              </article>
+              <article className="industry-card industry-learning">
+                <span className="industry-number">03 / LEARNING</span>
+                <div className="industry-symbol" aria-hidden="true">⌬</div>
+                <h3>Make learning more practical.</h3>
+                <p>Interactive digital tools that help learners explore ideas, experiment, and understand difficult concepts.</p>
+                <span className="industry-project">EXPLORING THROUGH UACE VIRTUAL LAB</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="delivery-section">
+          <div className="section-wrap delivery-wrap">
+            <div className="delivery-heading">
+              <span className="eyebrow">A THOUGHTFUL ENGINEERING PROCESS</span>
+              <h2>Think in products.<br /><span>Build for the long run.</span></h2>
+              <p>Good work doesn't end when a first version ships. We keep the full product journey in view, from understanding the need to learning what should improve next.</p>
+            </div>
+            <div className="delivery-steps">
+              <article><span>01</span><div><h3>Discover</h3><p>Understand the people, the problem, and what success should actually mean.</p></div><small>ASK BETTER QUESTIONS</small></article>
+              <article><span>02</span><div><h3>Shape</h3><p>Turn the strongest ideas into a clear experience and a focused plan.</p></div><small>MAKE THE RIGHT THINGS</small></article>
+              <article><span>03</span><div><h3>Engineer</h3><p>Build carefully, with reliable foundations, thoughtful design, and real-world constraints in mind.</p></div><small>MAKE IT WORK WELL</small></article>
+              <article><span>04</span><div><h3>Evolve</h3><p>Learn from use, maintain what matters, and improve the product as needs change.</p></div><small>KEEP MAKING IT BETTER</small></article>
+            </div>
+          </div>
+        </section>
+
         <section className="section-wrap section-block" id="services">
           <div className="section-heading">
             <div><span className="eyebrow">WHAT WE DO</span><h2>From first thought<br />to <span>finished product.</span></h2></div>
@@ -190,6 +238,21 @@ export default function HomePage() {
                   <div className="project-info"><div><h3>{project.name}</h3><p>{project.description}</p></div><span className="project-status">{project.status}</span></div>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="proof-section">
+          <div className="section-wrap proof-wrap">
+            <div className="proof-copy">
+              <span className="eyebrow">CREDIBILITY, BUILT IN THE OPEN</span>
+              <h2>Show the work.<br /><span>Be honest about the journey.</span></h2>
+              <p>We are an independent, growing studio. Rather than inflate numbers or make promises we cannot prove, we share the products we're building, the thinking behind them, and their actual stage of development.</p>
+            </div>
+            <div className="proof-points">
+              <article><span>01</span><div><h3>Real problems</h3><p>Each product starts with a need worth solving, not a feature list looking for a reason to exist.</p></div></article>
+              <article><span>02</span><div><h3>Visible progress</h3><p>We distinguish concepts, products in development, and released work clearly.</p></div></article>
+              <article><span>03</span><div><h3>Long-term thinking</h3><p>We care about reliability, maintainability, and the experience after launch.</p></div></article>
             </div>
           </div>
         </section>
