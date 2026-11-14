@@ -13,9 +13,9 @@
   --quiet: #70798e;
   --line: rgba(211, 222, 255, .13);
   --line-bright: rgba(211, 222, 255, .23);
-  --violet: #b5a5ff;
-  --cyan: #8ce7e2;
-  --blue: #8baeff;
+  --violet: #f04a65;
+  --cyan: #d5d8df;
+  --blue: #aeb4c0;
   --content: 1160px;
 }
 * { box-sizing: border-box; }
@@ -24,8 +24,8 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(ellipse at 50% -18%, rgba(95, 91, 176, .20), transparent 43rem),
-    radial-gradient(ellipse at 100% 40%, rgba(49, 132, 145, .09), transparent 38rem),
+    radial-gradient(ellipse at 50% -18%, rgba(150, 12, 40, .18), transparent 43rem),
+    radial-gradient(ellipse at 100% 40%, rgba(175, 181, 193, .07), transparent 38rem),
     var(--bg);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
