@@ -93,15 +93,25 @@ export default function HomePage() {
             </div>
             <div className="hero-footnote"><span className="line" /> BUILT WITH INTENTION. MADE TO BE USEFUL.</div>
           </div>
-          <div className="hero-art" aria-label="Abstract Vortex Labs orbital artwork" role="img">
-            <div className="art-glow" />
-            <div className="orbit orbit-one" />
-            <div className="orbit orbit-two" />
-            <div className="orbit orbit-three" />
-            <div className="core"><span>V</span></div>
-            <div className="orbit-label label-top">IDEAS →</div>
-            <div className="orbit-label label-bottom">→ IMPACT</div>
-            <div className="art-caption"><span>FIG. 01</span> THE SPACE BETWEEN AN IDEA AND WHAT IT CAN BECOME.</div>
+          <div className="hero-art">
+            <Image
+              className="hero-art-image"
+              src="https://echodesono.com/images/4f2c02ad842b7eae18c14e6c313852a1.png"
+              alt="A luminous, flowing glass installation suspended inside a dark architectural space"
+              width={1400}
+              height={1400}
+              sizes="(max-width: 640px) 100vw, 48vw"
+              priority
+              unoptimized
+            />
+            <div className="hero-art-shade" />
+            <div className="hero-art-topline"><span>IDEAS</span><i /> <span>IN MOTION</span></div>
+            <div className="hero-v-mark">V</div>
+            <div className="hero-art-bottom">
+              <span className="hero-art-caption">WE TURN POSSIBILITY INTO SOMETHING REAL.</span>
+              <span className="hero-impact">IMPACT <b>↗</b></span>
+            </div>
+            <a className="hero-art-credit" href="https://echodesono.com/" target="_blank" rel="noreferrer">Visual reference · Echo de Sono</a>
           </div>
         </section>
 
