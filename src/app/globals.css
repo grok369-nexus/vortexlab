@@ -648,3 +648,123 @@ button, input, select, textarea { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .impact-visual img { transition: none; }
 }
+
+/* Outcome-led positioning and engineering credibility */
+.expertise-section {
+  position: relative;
+  padding-block: 132px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(14,19,31,.72), rgba(8,12,20,.94));
+}
+.expertise-heading { margin-bottom: 58px; }
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.industry-card {
+  position: relative;
+  min-height: 360px;
+  padding: 27px 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgba(211,222,255,.15);
+  border-radius: 4px 26px 4px 26px;
+  background:
+    radial-gradient(ellipse at 85% 15%, rgba(181,165,255,.13), transparent 45%),
+    linear-gradient(145deg, rgba(24,31,49,.88), rgba(10,15,25,.92));
+  box-shadow: inset 0 1px rgba(255,255,255,.06), 0 24px 65px rgba(0,0,0,.15);
+  transition: transform .3s ease, border-color .3s ease;
+}
+.industry-card:hover { transform: translateY(-5px); border-color: rgba(181,165,255,.38); }
+.industry-card::after {
+  content: "";
+  position: absolute;
+  width: 210px; height: 210px; right: -90px; top: 75px;
+  border: 1px solid rgba(181,165,255,.15); border-radius: 50%;
+  box-shadow: 0 0 0 24px rgba(181,165,255,.025), 0 0 0 50px rgba(181,165,255,.018);
+  pointer-events: none;
+}
+.industry-discovery { background: radial-gradient(ellipse at 85% 15%, rgba(140,231,226,.13), transparent 45%), linear-gradient(145deg, rgba(19,37,43,.88), rgba(10,15,25,.94)); }
+.industry-discovery::after { border-color: rgba(140,231,226,.2); }
+.industry-learning { background: radial-gradient(ellipse at 85% 15%, rgba(139,174,255,.14), transparent 45%), linear-gradient(145deg, rgba(25,30,48,.9), rgba(10,15,25,.94)); }
+.industry-number { color: #aeb8cd; font-size: 8px; letter-spacing: .19em; }
+.industry-symbol {
+  display: grid; place-items: center;
+  width: 72px; height: 72px; margin-top: 45px; margin-bottom: 27px;
+  border: 1px solid rgba(228,232,255,.23); border-radius: 22px;
+  color: #d5ceff; background: rgba(255,255,255,.055);
+  box-shadow: inset 0 1px rgba(255,255,255,.1), 0 12px 32px rgba(0,0,0,.16);
+  font-size: 42px; line-height: 1;
+}
+.industry-discovery .industry-symbol { color: #a4eee7; }
+.industry-learning .industry-symbol { color: #b6caff; }
+.industry-card h3 { position: relative; z-index: 1; max-width: 270px; margin: 0 0 12px; font-size: 23px; line-height: 1.12; letter-spacing: -.045em; font-weight: 520; }
+.industry-card p { position: relative; z-index: 1; max-width: 310px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.85; }
+.industry-project { position: relative; z-index: 1; margin-top: auto; padding-top: 28px; color: var(--cyan); font-size: 7px; letter-spacing: .14em; }
+.delivery-section {
+  position: relative;
+  padding-block: 140px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 100% 40%, rgba(91,120,177,.12), transparent 42%), #080c14;
+  border-bottom: 1px solid var(--line);
+}
+.delivery-wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(55px, 9vw, 130px); }
+.delivery-heading h2, .proof-copy h2 {
+  margin: 24px 0;
+  font-size: clamp(49px, 6vw, 76px);
+  line-height: .98;
+  letter-spacing: -.075em;
+  font-weight: 520;
+}
+.delivery-heading h2 span, .proof-copy h2 span {
+  color: transparent;
+  background: linear-gradient(105deg, #d1c7ff, #a99aff 48%, #91e9e3);
+  -webkit-background-clip: text; background-clip: text;
+}
+.delivery-heading p, .proof-copy p { max-width: 390px; color: var(--muted); font-size: 12px; line-height: 1.95; }
+.delivery-steps { border-top: 1px solid var(--line-bright); }
+.delivery-steps article {
+  display: grid; grid-template-columns: 38px 1fr auto; gap: 16px; align-items: start;
+  padding: 26px 0; border-bottom: 1px solid var(--line);
+}
+.delivery-steps article > span, .proof-points article > span { color: var(--cyan); font-size: 9px; letter-spacing: .1em; padding-top: 4px; }
+.delivery-steps h3, .proof-points h3 { margin: 0 0 7px; font-size: 19px; font-weight: 520; letter-spacing: -.025em; }
+.delivery-steps p, .proof-points p { max-width: 390px; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.85; }
+.delivery-steps small { color: #7d879c; font-size: 7px; letter-spacing: .14em; padding-top: 7px; white-space: nowrap; }
+.proof-section {
+  padding-block: 135px;
+  background: linear-gradient(120deg, rgba(25,28,46,.82), rgba(10,14,23,.94));
+  border-bottom: 1px solid var(--line);
+}
+.proof-wrap { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(55px, 9vw, 130px); align-items: center; }
+.proof-copy h2 { font-size: clamp(46px, 5.4vw, 68px); }
+.proof-points { border-top: 1px solid var(--line-bright); }
+.proof-points article { display: grid; grid-template-columns: 38px 1fr; gap: 16px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.proof-points h3 { font-size: 17px; }
+@media (max-width: 900px) {
+  .expertise-section, .delivery-section, .proof-section { padding-block: 95px; }
+  .industry-grid { grid-template-columns: 1fr 1fr; }
+  .industry-card:last-child { grid-column: 1 / -1; min-height: 310px; }
+  .delivery-wrap, .proof-wrap { grid-template-columns: 1fr; gap: 45px; }
+  .delivery-heading p, .proof-copy p { max-width: 570px; }
+}
+@media (max-width: 640px) {
+  .expertise-section, .delivery-section, .proof-section { padding-block: 78px; }
+  .expertise-heading { margin-bottom: 35px; }
+  .industry-grid { grid-template-columns: 1fr; gap: 12px; }
+  .industry-card, .industry-card:last-child { grid-column: auto; min-height: 330px; padding: 23px 21px; }
+  .industry-symbol { margin-top: 35px; margin-bottom: 22px; }
+  .industry-card h3 { font-size: 22px; }
+  .delivery-wrap, .proof-wrap { display: block; }
+  .delivery-steps, .proof-points { margin-top: 38px; }
+  .delivery-steps article { grid-template-columns: 28px 1fr; gap: 12px; }
+  .delivery-steps small { grid-column: 2; padding-top: 0; }
+  .delivery-heading h2, .proof-copy h2 { font-size: clamp(45px, 12vw, 62px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .industry-card { transition: none; }
+}
