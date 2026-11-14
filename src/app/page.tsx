@@ -68,7 +68,7 @@ export default function HomePage() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Vortex Labs home">
-          <span className="brand-mark"><span /></span>
+          <Image className="brand-logo" src="/vortex-mark.svg" alt="" width={42} height={42} priority />
           <span>VORTEX<span className="brand-light">LABS</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
@@ -94,7 +94,7 @@ export default function HomePage() {
             />
             <div className="hero-art-shade" />
             <div className="hero-art-topline"><span>IDEAS</span><i /> <span>IN MOTION</span></div>
-            <div className="hero-v-mark">V</div>
+            <Image className="hero-v-mark" src="/vortex-mark.svg" alt="" width={420} height={520} priority />
             <div className="hero-art-bottom">
               <span className="hero-art-caption">WE TURN POSSIBILITY INTO SOMETHING REAL.</span>
               <span className="hero-impact">IMPACT <b>↗</b></span>
@@ -103,15 +103,15 @@ export default function HomePage() {
           </div>
           <div className="hero-copy section-wrap">
             <div className="eyebrow"><span className="status-dot" /> INDEPENDENT DIGITAL PRODUCT STUDIO</div>
-            <h1>Make room for <span>what&apos;s possible.</span></h1>
+            <h1>Technology that makes <span>more possible.</span></h1>
             <p className="hero-lede">
-              We turn thoughtful ideas into useful technology. Digital products, platforms, and experiences designed to make life work better.
+              We turn meaningful problems into thoughtfully designed, dependable digital products and experiences that make life work better.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#start">Start a conversation <ArrowUpRight /></a>
               <a className="text-link" href="#work">Discover what we make <span>↓</span></a>
             </div>
-            <div className="hero-footnote"><span className="line" /> EXTRAORDINARY TECHNOLOGY. EFFORTLESS EXPERIENCES.</div>
+            <div className="hero-footnote"><span className="line" /> EXTRAORDINARY TECHNOLOGY. EFFORTLESS EXPERIENCES. MEANINGFUL LIVES.</div>
           </div>
           <a className="hero-scroll-cue" href="#belief">SCROLL TO EXPLORE <span>↓</span></a>
         </section>
@@ -141,7 +141,7 @@ export default function HomePage() {
                 unoptimized
               />
               <div className="impact-visual-shade" />
-              <span className="impact-visual-v" aria-hidden="true">V</span>
+              <Image className="impact-visual-v" src="/vortex-mark.svg" alt="" width={220} height={280} />
               <span className="impact-visual-label">DESIGNED FOR POSSIBILITY · BUILT FOR PEOPLE</span>
             </div>
           </div>
@@ -280,7 +280,7 @@ export default function HomePage() {
       </div>
 
       <footer className="site-footer section-wrap">
-        <a className="brand" href="#top"><span className="brand-mark"><span /></span><span>VORTEX<span className="brand-light">LABS</span></span></a>
+        <a className="brand" href="#top"><Image className="brand-logo" src="/vortex-mark.svg" alt="" width={38} height={38} /><span>VORTEX<span className="brand-light">LABS</span></span></a>
         <span>Extraordinary technology. Effortless experiences.</span>
         <a href="#top">Back to top ↑</a>
         <small>© {new Date().getFullYear()} Vortex Labs. Built with intention.</small>
