@@ -81,7 +81,7 @@ export default function HomePage() {
 
       <div id="main-content">
         <section className="hero cinematic-hero" id="top">
-          <div className="hero-art" aria-hidden="true">
+          <div className="hero-art">
             <Image
               className="hero-art-image"
               src="https://echodesono.com/images/4f2c02ad842b7eae18c14e6c313852a1.png"
