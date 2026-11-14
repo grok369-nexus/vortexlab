@@ -184,7 +184,7 @@ export default function HomePage() {
             <div className="delivery-heading">
               <span className="eyebrow">A THOUGHTFUL ENGINEERING PROCESS</span>
               <h2>Think in products.<br /><span>Build for the long run.</span></h2>
-              <p>Good work doesn't end when a first version ships. We keep the full product journey in view, from understanding the need to learning what should improve next.</p>
+              <p>Good work doesn&apos;t end when a first version ships. We keep the full product journey in view, from understanding the need to learning what should improve next.</p>
             </div>
             <div className="delivery-steps">
               <article><span>01</span><div><h3>Discover</h3><p>Understand the people, the problem, and what success should actually mean.</p></div><small>ASK BETTER QUESTIONS</small></article>
@@ -247,7 +247,7 @@ export default function HomePage() {
             <div className="proof-copy">
               <span className="eyebrow">CREDIBILITY, BUILT IN THE OPEN</span>
               <h2>Show the work.<br /><span>Be honest about the journey.</span></h2>
-              <p>We are an independent, growing studio. Rather than inflate numbers or make promises we cannot prove, we share the products we're building, the thinking behind them, and their actual stage of development.</p>
+              <p>We are an independent, growing studio. Rather than inflate numbers or make promises we cannot prove, we share the products we&apos;re building, the thinking behind them, and their actual stage of development.</p>
             </div>
             <div className="proof-points">
               <article><span>01</span><div><h3>Real problems</h3><p>Each product starts with a need worth solving, not a feature list looking for a reason to exist.</p></div></article>
